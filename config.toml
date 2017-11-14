@@ -1,0 +1,27 @@
+languageCode = "en-au"
+title = "Legendary Australia"
+baseurl = "http://legendaryaustralia.com/"
+theme = "aerial"
+
+[params]
+  name = "Legendary Australia"
+  about = "What lurks Down Under?"
+  copyright = "2017 Simon Taylor & David Peterson. Photo by Grant McIver on Unsplash"
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = "false"
+  favicon = "favicon.ico"
+
+[[params.social]]
+  medium = "Twitter"
+  icon = "twitter"
+  link = "https://twitter.com/legendary_oz"
+
+[[params.social]]
+  medium = "Facebook"
+  icon = "facebook"
+  link = "https://fb.me/LegendaryAustralia"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope-o"
+  link = "mailto:productions@randomphotons.com"
