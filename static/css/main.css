@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
+@font-face {
+	font-family: 'Amity-Jack';
+	src        : url('fonts/Amity-Jack/Amity-Jack.ttf.woff') format('woff'),
+		url('fonts/Amity-Jack/Amity-Jack.ttf.svg#Amity-Jack') format('svg'),
+		url('fonts/Amity-Jack/Amity-Jack.ttf.eot'),
+		url('fonts/Amity-Jack/Amity-Jack.eot?#iefix') format('embedded-opentype'); 
+	font-weight: normal;
+	font-style : normal;
+}
+
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -520,10 +530,11 @@
 	}
 
 		#header h1 {
-			font-size     : 4.35em;
-			font-weight   : 900;
-			letter-spacing: -0.035em;
-			line-height   : 1em;
+			font-family: 'Amity-Jack';
+			font-size  : 4.35em;
+			font-weight: 900;
+			/* letter-spacing: -0.035em; */
+			line-height: 1em;
 		}
 
 		#header p {
@@ -690,6 +701,14 @@
 		position        : absolute;
 		text-align      : center;
 		width           : 100%;
+	}
+
+	#show-credits {
+		display: none;
+	}
+
+	#hide-credits {
+		display: none;
 	}
 
 /* Wide */
@@ -861,33 +880,30 @@
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+		body {
+			min-width: 320px;
+		}
 
-			body {
-				min-width: 320px;
-			}
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
+		body, input, select, textarea {
+			font-size: 11pt;
+		}
 
 		/* BG */
+		@-moz-keyframes bg {
+			0% {
+				-moz-transform   : translate3d(0,0,0);
+				-webkit-transform: translate3d(0,0,0);
+				-ms-transform    : translate3d(0,0,0);
+				transform        : translate3d(0,0,0);
+			}
 
-			@-moz-keyframes bg {
-				0% {
-					-moz-transform   : translate3d(0,0,0);
-					-webkit-transform: translate3d(0,0,0);
-					-ms-transform    : translate3d(0,0,0);
-					transform        : translate3d(0,0,0);
-				}
-
-				100% {
-					-moz-transform   : translate3d(-300px,0,0);
-					-webkit-transform: translate3d(-300px,0,0);
-					-ms-transform    : translate3d(-300px,0,0);
-					transform        : translate3d(-300px,0,0);
-				}
-
-	}
+			100% {
+				-moz-transform   : translate3d(-300px,0,0);
+				-webkit-transform: translate3d(-300px,0,0);
+				-ms-transform    : translate3d(-300px,0,0);
+				transform        : translate3d(-300px,0,0);
+			}
+		}
 
 		@-webkit-keyframes bg {
 			0% {
@@ -942,7 +958,7 @@
 			width          : 900px;
 		}
 
-	/* Header */
+		/* Header */
 
 		#header h1 {
 			font-size: 2.5em;
@@ -956,13 +972,39 @@
 			font-size: 1em;
 		}
 
-			#header nav a:hover {
-				font-size: 1em;
-			}
+		#header nav a:hover {
+			font-size: 1em;
+		}
 
-			#header nav a:active {
-				font-size: 1em;
-			} }
+		#header nav a:active {
+			font-size: 1.2em;
+		}
+
+		/* Footer */
+		#footer {
+			height     : auto;
+			width      : 100%;
+			line-height: 1em;
+			padding    : 10px 15px;
+		}
+
+		#footer .copyright, #footer .credits {
+			width: 100%;
+		}
+
+		#footer span {
+			display: inline-block;
+		}
+
+		#footer .credits {
+			display: none;
+		}
+
+		#show-credits, #hide-credits {
+			display: block;
+			float  : right;
+		}
+	}
 
 /* Mobile (Portrait) */
 

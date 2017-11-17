@@ -2,14 +2,18 @@ languageCode = "en-au"
 title = "Legendary Australia"
 baseurl = "http://legendaryaustralia.com/"
 theme = "aerial"
+publishDir = "docs"
 
 [params]
   name = "Legendary Australia"
   about = "What lurks Down Under?"
-  copyright = "2017 Simon Taylor & David Peterson. Photo by Grant McIver on Unsplash"
+  copyright = "2017 Simon Taylor & David Peterson"
   #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
   bg_scroll = "false"
   favicon = "favicon.ico"
+
+[[params.credits]]
+  text = "Photo by Grant McIver on Unsplash."
 
 [[params.social]]
   medium = "Twitter"
