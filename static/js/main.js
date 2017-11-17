@@ -4,10 +4,12 @@ $( document ).ready(function() {
     $("#show-credits").click(function() {
         copyright.hide();
         credits.show();
+        return true;
     });
 
     $("#hide-credits").click(function() {
         credits.hide();
         copyright.show();
+        return true;
     })
 });
