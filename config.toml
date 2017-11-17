@@ -2,7 +2,6 @@ languageCode = "en-au"
 title = "Legendary Australia"
 baseurl = "http://legendaryaustralia.com/"
 theme = "aerial"
-publishDir = "docs"
 
 [params]
   name = "Legendary Australia"

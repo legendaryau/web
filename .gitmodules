@@ -3,5 +3,4 @@
 	url = https://github.com/sethmacleod/aerial.git
 [submodule "public"]
 	path = public
-	url = https://github.com/legendaryau/legendaryau.github.io.git
-	branch = master
+	url = https://github.com/legendaryau/legendaryau.github.io
