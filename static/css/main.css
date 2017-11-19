@@ -197,7 +197,7 @@
 	
 		/* Set your background with this */
 
-		background: black url("images/bg.jpg");
+		background: #090911 url("images/bg.jpg");
 		/* background-repeat: repeat-x; */
 		background-size    : 100% auto;
 		background-repeat  : no-repeat;
